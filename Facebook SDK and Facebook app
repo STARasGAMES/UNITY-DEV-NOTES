@@ -8,3 +8,4 @@ The "Key Hash" generated in the Unity Engine is wrong. So to generate right one 
 4. copy SHA1 bytes into HEX to BASE64 converter (http://tomeko.net/online_tools/hex_to_base64.php)
 5. see your BASE64 key hash in output field
 
+source: https://forum.unity.com/threads/solved-problem-with-login-facebook-sdk-android.257482/#post-1709450
