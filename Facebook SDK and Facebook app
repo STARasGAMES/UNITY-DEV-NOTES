@@ -1,0 +1,10 @@
+Android app with Facebook SDK wont login, if user already has Facebook app installed. 
+
+The "Key Hash" generated in the Unity Engine is wrong. So to generate right one you need to do next steps:
+
+1. Unzip .apk file and extract META-INF\CERT.RSA file
+2. in command line run: keytool -printcert -file CERT.RSA
+3. notice SHA1 bytes are printed like 29:37:F1:CB:06…
+4. copy SHA1 bytes into HEX to BASE64 converter (http://tomeko.net/online_tools/hex_to_base64.php)
+5. see your BASE64 key hash in output field
+
