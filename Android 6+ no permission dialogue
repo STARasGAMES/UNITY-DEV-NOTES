@@ -1,0 +1,5 @@
+Starting from android 6 there is no permission dialogue on startap. 
+Now developer need to ask for permission at runtime right before using this permission.
+
+Solution:
+https://forum.unity.com/threads/android-6-marshmallow-runtime-permissions-issues.375934/#post-3132465
