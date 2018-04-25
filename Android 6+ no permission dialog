@@ -1,4 +1,4 @@
-Starting from android 6 there is no permission dialogue on startap. 
+Starting from android 6 there is no permission dialog on startap. 
 Now developer need to ask for permission at runtime right before using this permission.
 
 Solution:
