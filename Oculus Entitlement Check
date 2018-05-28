@@ -1,0 +1,25 @@
+									Entitlement Check DOES NOT work in EDITOR!!! 
+						You MUST UPLOAD BUILD to oculus dasboard TO TEST out Entitlement Check
+
+Link: https://developer.oculus.com/documentation/platform/1.7/concepts/pgsg-3-pw-platform-walkthrough/
+
+Script part is very simple:  
+(you can find other implementation methods, this from the article above)
+      Core.Initialize("123456789012345");
+      Entitlements.IsUserEntitledToApplication().OnComplete(
+        (Message msg) =>
+        {
+          if (msg.IsError)
+          {
+            // User is NOT entitled.
+            showMessageThatTheUserDoesntOwnThis();
+          } else 
+          {
+           // User IS entitled
+           proceedAsNormal();
+          }
+        }
+      );   
+
+But its hard to figure out that Entitlement Check doesnt work in editor and requires build to be uploaded to oculus ALPHA RELEASE CHANNEL.
+Dont forget to add test users to this Release Channel!
