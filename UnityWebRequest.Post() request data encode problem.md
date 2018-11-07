@@ -1,5 +1,5 @@
 Just WTF... Spent 2 weeks on this issue...
-UnityWebRequest.Post can't work with json request data, when Put, Get are work fine. 
+UnityWebRequest.Post can't work with json request data. Ath the same time Put() and Get() work fine. 
 
 
 So, this code doesn't work:
